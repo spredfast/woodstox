@@ -7,7 +7,7 @@
       <version>24</version>
     </parent>
 
-    <groupId>com.fasterxml.woodstox</groupId>
+    <groupId>com.massrel</groupId>
     <artifactId>woodstox-core</artifactId>
     <version>5.0.3</version>
     <packaging>bundle</packaging>

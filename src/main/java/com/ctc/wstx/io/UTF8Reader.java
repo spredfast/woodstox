@@ -248,7 +248,7 @@ public final class UTF8Reader
                         if (c < 0xE000) {
                             reportInvalid(c, outPtr-start, "(a surrogate character) ");
                         } else if (c >= 0xFFFE) {
-                            reportInvalid(c, outPtr-start, "");
+                            c = 0xFFFD;
                         }
                     } else if (mXml11 && c == 0x2028) { // LSEP?
                         /* 10-May-2006, TSa: Since LSEP is "non-associative",
